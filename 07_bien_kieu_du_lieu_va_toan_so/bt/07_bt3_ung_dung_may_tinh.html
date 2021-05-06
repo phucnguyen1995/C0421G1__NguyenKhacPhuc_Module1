@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt3</title>
+</head>
+<body>
+ <div><input id="a" type="text">
+     <input id="b" type="text"> </div>
+
+    <button onclick="ba();">Addition(+)</button>
+    <button onclick="bon();">Subtraction(-)</button>
+    <button onclick="nam();">Multiplication(X)</button>
+    <button onclick="sau();">Division(/)</button>
+
+<script>
+    function ba() {
+        let a=parseFloat(document.getElementById("a").value);
+        let b=parseFloat(document.getElementById("b").value);
+        let c=a+b
+
+
+
+        alert("Kết quả: " +c);
+
+    }
+    function bon() {
+        let a=parseFloat(document.getElementById("a").value);
+        let b=parseFloat(document.getElementById("b").value);
+        let d=a-b
+
+
+
+        alert("Kết quả: " +d);
+
+    }
+    function nam() {
+        let a=parseFloat(document.getElementById("a").value);
+        let b=parseFloat(document.getElementById("b").value);
+        let e=a*b
+
+
+
+        alert("Kết quả: " +e);
+
+    }
+    function sau() {
+        let a=parseFloat(document.getElementById("a").value);
+        let b=parseFloat(document.getElementById("b").value);
+        let f=a/b
+
+
+
+        alert("Kết quả: " +f);
+
+    }
+</script>
+
+</body>
+</html>
