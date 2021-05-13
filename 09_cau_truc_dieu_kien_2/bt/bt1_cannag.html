@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt</title>
+</head>
+<body>
+<script>
+    let weight=parseFloat(prompt("Nhập cân nặng đơn vi kg"));
+    let height=parseFloat(prompt("Nhập chiều cao đơn vi m"));
+     a=weight / ( height ^ 2)
+    if (a < 18.5)
+        document.write("Underweight");
+
+    else if (a < 25)
+        document.write("Normal");
+
+    else if (a < 30)
+        document.write("Overweight");
+
+    else
+        document.write("Obese");
+
+</script>
+
+</body>
+</html>

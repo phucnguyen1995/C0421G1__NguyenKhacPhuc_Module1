@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count=20
+    let j=0;
+    let k=1;
+    for (let i=1;i<=count;i++) {
+        alert(k)
+        f = j + k;
+        j = k;
+        k = f;
+
+        if (k % 5 == 0) {
+            alert("số đầu tiên chia hết cho 5 là " + k)
+            break;
+        }
+    }
+</script>
+
+</body>
+</html>

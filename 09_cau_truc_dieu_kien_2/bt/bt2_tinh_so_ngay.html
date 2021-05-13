@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhngay</title>
+</head>
+<body>
+<form>
+    <input type="text" id="nhapthang" >
+    <button type="button" onclick="ngay()">tinh so ngay</button>
+    <p id="kq" ></p>
+</form>
+<script>
+    function ngay() {
+        let month = parseInt(document.getElementById("nhapthang").value);
+        let ketqua = ""
+        switch (month) {
+            case 2:
+                ketqua = "thang 2 co 28 hoac 29 ngay"
+                break;
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 9:
+            case 11:
+                ketqua = "thang " + month + " co 31 ngay"
+                break;
+
+            case 4:
+            case 6:
+            case 8:
+            case 10:
+            case 12:
+                ketqua = "thang " + month + " co 30 ngay"
+                break;
+            default:
+                ketqua = "nhap ket qua tu 1 den 12"
+        }
+        document.getElementById("kq").innerText = ketqua
+    }
+</script>
+
+
+</body>
+</html>
