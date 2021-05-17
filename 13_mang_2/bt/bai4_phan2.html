@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 4: Viết một chương trình để đếm số từ trong một chuỗi-->
+<script>
+    let a=prompt("Nhập chuỗi")
+    let array=a.split("");
+    let dem=0;
+for(let i=0;i<array.length;i++) {
+    if(isNaN(array[i])==true) {
+        dem++
+    }
+} document.write("số trong chuỗi là: "+dem)
+
+
+</script>
+
+</body>
+</html>

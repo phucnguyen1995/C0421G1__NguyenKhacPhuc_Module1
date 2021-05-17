@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--     Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau-->
+<!--     đó kiểm tra xem hai chuỗi có giống nhau hay không.-->
+
+<!--        <input type="text" id = "chuoi1" >;-->
+<!--        <input type="text" id = "chuoi2" >;-->
+<!--        <input type="button" id="ss" value="So sánh" onclick="A()">-->
+<!--        <p id="ketqua"></p>-->
+<!--<script>-->
+<!--    function A() {-->
+<!--        let a = document.getElementById("chuoi1").value;-->
+<!--        let b = document.getElementById("chuoi2").value;-->
+<!--        if (a == b) {-->
+<!--            document.getElementById("ketqua").innerText = "2 chuỗi giống nhau";-->
+<!--        } else {-->
+<!--            document.getElementById("ketqua").innerText = "2 chuỗi khác nhau";-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--cách anh Trung hướng dẫn-->
+<script>
+    let str1 = prompt("Nhap chuoi 1:");
+    let str2 = prompt("Nhap chuoi 2:");
+
+    //chuyen chuoi thanh mang
+    let arrStr1 = str1.split(""); //abcdxxxx
+    // let arrStr1 = Array.from(str1);
+    let arrStr2 = str2.split(""); //axcdxxxx
+    // let arrStr2 = Array.from(str2);
+
+
+    let check = true;
+
+    if(arrStr1.length == arrStr2.length){
+        for(let i = 0; i<arrStr1.length; i++){
+            if(arrStr1[i] != arrStr2[i]){
+                check = false;
+                break;
+            }
+        }
+    } else {
+        check = false;
+    }
+
+    if(check){
+        document.write("Hai chuoi giong nhau.");
+    } else {
+        document.write("Hai chuoi khac nhau");
+    }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
