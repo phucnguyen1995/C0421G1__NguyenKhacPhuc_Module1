@@ -9,7 +9,13 @@
     // Bài 3: Viết một chương trình khai báo một mảng ký tự và kích
     // thước của mảng. Chương trình này đếm số ký tự số trong mảng.
 
-    let x=parseFloat(prompt("Nhập vào chiều dài mảng"));
+    // let x=parseFloat(prompt("Nhập vào chiều dài mảng"));
+    let x=parseInt(prompt("Nhập vào chiều dài mảng"))
+    // Chiều dài của mảng có thể nhập số thập phân, ví dụ như 5.6, 5.7..?   ko phải thập phân ko nên lạm dụng float , linh hoạt hơn
+    // phải phân biệt đc lúc mô cần Int lúc mô cần Float
+    // vd chiều dài mảng là số nguyên
+    // thì ưu tiên dùng Int
+
     let array=Array(x);
     for(let i=0;i<array.length;i++) {
         array[i]=prompt("Nhập vào kí tự")}

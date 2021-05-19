@@ -15,7 +15,9 @@
     array.sort(function (a,b) {
         return b-a;
         // (chú ý cứ nhớ giảm là b-a, tăng là a-b)
-        // document.write(array[i]+",") ,chưa hiểu tai sao để trong này nó lại không in ra
+        // document.write(array[i]+",")
+        // Viết source bên trong nội dung function sort, trong phạm vi của function sort thì nó không biết array[i] là gì
+        // ==> không in được. (function sort chỉ nhìn được hai biến a và b thôi là 2 tham số truyển vào của nó)
 
     })
 

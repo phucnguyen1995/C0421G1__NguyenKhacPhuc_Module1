@@ -6,16 +6,34 @@
 </head>
 <body>
 <!--Bài 5- Viết chương trình đếm số nguyên âm trong một chuỗi-->
-<script>
-    let x=parseFloat(prompt("Nhập vào chiều dài mảng"))
-    let array=Array(x)
-    let đem=0;
-    for(i=0;i<array.length;i++) {
-        array[i]=parseFloat(prompt("Nhập vào giá trị các số nguyên âm trong mảng"))
-        dem=i
 
+<!--<script>-->
+<!--    let x = parseFloat(prompt("Nhập vào chiều dài mảng"))-->
+<!--    let array = Array(x)-->
+<!--    let đem = 0;-->
+<!--    for (i = 0; i < array.length; i++) {-->
+<!--        array[i] = parseFloat(prompt("Nhập vào giá trị các số nguyên âm trong mảng"))-->
+<!--        dem = i-->
+
+<!--    }-->
+<!--    alert("có " + i + " số nguyên âm trong dãy")-->
+<!--     Hiểu sai đề. Bài này yêu cầu đếm số nguyên âm của một mảng ban đầu cho trước (hoặc người dùng nhập từ bàn phím).-->
+<!--     Mảng cho trước có thể có cả số nguyên âm và dương, nhiệm vụ của em là đếm được các số âm trong mảng đã cho.-->
+<!--        Vấn đề thứ 2: là em có chạy thử sau khi code xong chưa ?-->
+
+
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+<script>
+    let x = parseInt(prompt("Nhập vào chiều dài mảng"))
+    let array = Array(x)
+    let dem = 0;
+    for (i = 0; i < array.length; i++) {
+        array[i] = parseFloat(prompt("Nhập vào giá trị các số nguyên âm trong mảng"))
+        if (array[i] < 0) {
+            dem++
+        }
     }
-    alert("có "+i+" số nguyên âm trong dãy")
+    alert("có " + dem + " số nguyên âm trong dãy")
 </script>
 
 </body>

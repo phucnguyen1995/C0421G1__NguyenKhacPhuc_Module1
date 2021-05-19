@@ -22,9 +22,14 @@
             index=i;
 
         }total+=array[i];
-        chia=total/x
+        // chia=total/x
+        // lời anh trung sửa:Việc tính trung bình đang bị lặp đi lặp lại trong vòng lặp for.
+        // Thay vào đó ra ngoài for -ta gõ: chia= total/x; thì chương trình vẫn đúng.
+        //
+        // (mặc dù code như trên không sai, nhưng cứ mỗi lần thực hiện 1 phép toán thừa sẽ
+        // tốn tài nguyên của máy tính ==> ảnh hưởng đến hiệu năng ứng dụng)
 
-    } alert("số lớn nhất là "+max+" và trung bình của dãy số là " +chia)
+    } alert("số lớn nhất là "+max+" và trung bình của dãy số là " +total/x)
 </script>
 
 </body>
