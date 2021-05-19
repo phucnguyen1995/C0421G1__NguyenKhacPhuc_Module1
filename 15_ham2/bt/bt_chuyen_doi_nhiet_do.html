@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    // [Bài tập] Chuyển đổi giữa feet và meters-->
+<!--    // Mục tiêu-->
+<!--    // Luyện tập tạo và sử dụng hàm-->
+<!--    // Mô tả-->
+<!--    // Xây dựng hai phương thức sau:-->
+<!--    //     Chuyển đổi từ feet sang meters:-->
+<!--    //     function footToMeter(foot)-->
+
+<!--    // Chuyển đổi từ meters sang feet:-->
+<!--    //     function meterToFoot(meter)-->
+
+<!--    // Công thức chuyển đổi như sau:-->
+<!--    //     meter = 0.305 * foot-->
+<!--    // foot = 3.279 * meter</script>-->
+<body>
+<label>Meters</label><input type="number" oninput="meterToFeet(this.value)">
+<div>feet <span id="input1"></span> </div> <br>
+<label>Feet</label><input type="number" oninput="feeterToMeters(this.value)">
+<div>meters <span id="input2"></span> </div>
+<script>
+    function meterToFeet(feet) {
+        let a = parseFloat(feet)
+        document.getElementById("input1").innerText="feet :" +3.279*a
+    }
+    function feeterToMeters(meters) {
+        let b =parseFloat(meters)
+        document.getElementById("input2").innerText='meters :' +0.305*b
+    }
+</script>
+</body>
+</body>
+
+
+
+
+
+</body>
+</html>

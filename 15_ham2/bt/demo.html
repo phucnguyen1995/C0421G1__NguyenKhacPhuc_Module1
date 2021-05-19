@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    /*
+    Co 2 loai
+    1. Ham khong tra ve gi het
+    2. Ham co tra ve - dung tu khoa return.
+     */
+    function isPrime(number) {
+        if (number > 1) {
+            let count = 0;
+            for (let i = 1; i <= number; i++) {
+                if (number % i == 0) {
+                    count++;
+                }
+            }
+            if (count == 2) {
+                // document.write(number + " la so nguyen to");
+                // return number + " la so nguyen to";
+                return true;
+            } else {
+                // document.write(number + " khong phai la so nguyen to");
+                // return number + " khong phai la so nguyen to";
+                return false;
+            }
+        } else {
+            // document.write(number + " khong phai la so nguyen to");
+            // return number + " khong phai la so nguyen to";
+            return false;
+        }
+    }
+
+    /*
+        // let a; //khai bao bien ma khong gan gia tri
+        let input = parseInt(prompt("Nhap so nguyen: ")); //9
+        // let a = isPrime(input);
+        let result = isPrime(input);
+        document.write(result);
+        // console.log("gia tri cua a: " + a);
+    */
+
+    for (let i = 1; i <= 1000; i++) {
+        if (isPrime(i)) {
+            document.write(i + " ");
+        }
+    }
+</script>
+
+</body>
+</html>
