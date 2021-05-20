@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    [Bài tập] Xây dựng lớp mô tả hình chữ nhật-->
+<!--    Mục tiêu-->
+<!--    Luyện tập tạo lớp, đối tượng, phương thức và thuộc tính của đối tượng.-->
+<!--        Mô tả-->
+<!--    Viết một lớp các đối tượng hình chữ nhật lấy tên là Rectangle, mỗi hình chữ nhật đều có những đặc tính sau:-->
+<!--        + Có thông số chiều dài (int).-->
+<!--    + Có thông số chiều rộng (int).-->
+<!--    + Có tính năng tính diện tích.-->
+<!--    + Có tính năng tính chu vi.-->
+<!--    + Có tính năng hiển thị trực quan hình chữ nhật bằng cách vẽ lên canvas-->
+<!--    Sử dụng lớp Rectangle vừa định nghĩa để viết một chương trình JavaScript  với kịch bản như sau:-->
+<!--        Khai báo và khởi tạo một đối tượng kiểu Rectangle.-->
+<!--        Hiển thị hình chữ nhật trên màn hình web-->
+<!--    Thay đổi chiều dài và chiều rộng của hình chữ nhật.-->
+<!--        In ra màn hình diện tích và chu vi của hình chữ nhật đó.-->
+<!--    class Rectangle {-->
+<!--        constructor(int,dientich,chuvi,canvas) {-->
+<!--            this.int=int-->
+<!--            this.dientich=dientich-->
+<!--            this.chuvi=chuvi-->
+<!--            this.canvas=canvas-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<canvas id="canvasHTML" width="1368px" height="768px" style="border: 1px solid #d3d3d3"></canvas>
+<script>
+    class Rectangle {
+        constructor(rong, dai) {
+            this.rong = rong;
+            this.dai = dai;
+        }
+
+        dientich(rong, dai) {
+            return this.rong * this.dai;
+        }
+
+        chuvi(rong, dai) {
+            return (this.rong + this.dai) * 2;
+        }
+    }
+    rong = parseFloat(prompt("nhập vào chiều rộng"))
+    dai = parseFloat(prompt("Nhập vào chiều dài"))
+    let hcn=new Rectangle(rong, dai)
+    document.write("Diện tích hình chữ nhật là: "+hcn.dientich()+"<br>")
+    document.write("Chu vi hình chữ nhật là "+hcn.chuvi())
+    let canvasHTML = document.getElementById("canvasHTML");
+    canvasContext = canvasHTML.getContext("2d");
+    canvasContext.fillStyle = prompt("Nhập màu: ")
+    canvasContext.fillRect(100, 100, rong, dai)
+
+
+</script>
+
+</body>
+</html>

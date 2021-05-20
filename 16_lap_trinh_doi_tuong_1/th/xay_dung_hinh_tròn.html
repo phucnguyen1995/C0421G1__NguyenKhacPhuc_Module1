@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="cavasHTML" width="1000" height="1000"></canvas>
+<script>
+    let canvasHTML=document.getElementById("cavasHTML")
+    let canvasContext = canvasHTML.getContext("2d");
+    let a=parseFloat(prompt("Nhập vào toa độ trục hoành của tâm đường tròn"));
+    let b=parseFloat(prompt("Nhập vào toa độ trục tung của tâm đường tròn"));
+    let r=parseFloat(prompt("Nhập vào bán kính đường tròn"));
+    canvasContext.arc(a,b,r,0,2*Math.PI);
+    canvasContext.stroke();
+    canvasContext.fillStyle =prompt("Nhập màu: ")
+    canvasContext.fill();
+</script>
+
+</body>
+</html>
