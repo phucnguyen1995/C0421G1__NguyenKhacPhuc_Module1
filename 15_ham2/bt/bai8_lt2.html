@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+    let x=parseInt(prompt("nhập vào chiều dài mảng"))
+    let array=new Array(x)
+    for(i=0;i<array.length;i++) {
+        array[i]=parseInt(prompt("nhập vào giá trị số nguyên của mảng"))
+    }
+    function daoChieu(a) {
+        array=array.reverse();
+        return document.write(array)
+    }
+    daoChieu(array);
+
+
+</script>
+
+</body>
+</html>

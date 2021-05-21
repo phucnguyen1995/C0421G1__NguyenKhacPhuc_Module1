@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+    //     Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+
+    // let x = parseInt(prompt("nhập vào chiều dài mảng"));
+    // let array = new Array(x);
+    // for (i = 0; i < array.length; i++) {
+    //     array[i] = prompt("Nhập vào kí tự bất kì")
+    // }
+    // console.log(array);
+    // let y = prompt("nhạp vào kí tự cần tìm")
+    //
+    // function check(array, y) {
+    //     let count = 0;
+    //     let batKi = false
+    //     for (i = 0; i < array.length; i++) {
+    //         if (array[i] === y) {
+    //             count++;
+    //             // batKi = true
+    //             return "số lần xuất hiện của kí tự đó là: " + count
+    //             // bỏ dòng này thì chạy đúng thêm vào dòng này và bỏ dòng 26 thì lại chạy thử sai
+    //
+    //         }
+    //     }
+    //     if (batKi) {
+    //         return alert("số lần xuất hiện của kí tự đó là: " + count)
+    //     } else {
+    //         return alert(-1)
+    //     }
+    // }
+    //
+    // check(array, y)
+
+
+    let x = parseInt(prompt("nhập vào chiều dài mảng"));
+    let array = new Array(x);
+    for (i = 0; i < array.length; i++) {
+        array[i] = prompt("Nhập vào kí tự bất kì")
+    }
+    console.log(array);
+    let y = prompt("nhạp vào kí tự cần tìm")
+    function check(array, y) {
+        let count = 0;
+        let batKi = false
+        for (i = 0; i < array.length; i++) {
+            if (array[i] === y) {
+                count++;
+    }
+    }
+    if (count!=0) {
+        return alert("số lần xuất hiện của kí tự đó là: " + count)
+    } else {
+        return alert(-1)
+    }
+    }
+    check(array, y)
+
+
+
+
+</script>
+
+</body>
+</html>
