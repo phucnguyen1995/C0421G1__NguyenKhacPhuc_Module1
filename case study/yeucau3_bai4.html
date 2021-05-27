@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    // Bài 4: Viết một chương trình nhập một số từ bàn phím và in ra màn hình-->
+<!--    // bằng chữ. Ví dụ 1234, kết quả in ra màn hình là một hai ba bốn.-->
+<!--    -->
+
+<!--    let input = parseInt(prompt("Nhập vào chiều dài mảng"))-->
+<!--    let arr = new Array(input)-->
+<!--    for (i = 0; i < arr.length; i++) {-->
+<!--        arr[i] = parseInt(prompt("Nhập vào các sô trên bàn phím bạn muốn in ra"))-->
+<!--    }-->
+<!--    let a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];-->
+<!--    let b = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"];-->
+<!--    let c = [];-->
+<!--    for (let i = 0; i < arr.length; i++) {-->
+<!--        for (let j = 0; j < b.length; j++) {-->
+<!--            if (arr[i] == a[j]) {-->
+<!--                c.push(b[j])-->
+<!--            }-->
+<!--        }-->
+
+<!--    }-->
+<!--    document.write(c+"<br/>")-->
+<!--    document.write(c.join(" "))-->
+<!--</script>-->
+
+
+
+<script>
+    let input=prompt("nhập vào chuỗi số");
+    input=input.split("")
+
+    function inRa(arr) {
+        let a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let b = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"];
+        let c = [];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < b.length; j++) {
+                if (arr[i] == a[j]) {
+                    c.push(b[j])
+                }
+            }
+
+        }
+        return c
+
+    }
+
+document.write(inRa(input).join(" "))
+
+</script>
+
+
+</body>
+</html>
