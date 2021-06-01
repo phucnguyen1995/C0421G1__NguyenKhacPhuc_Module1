@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    Bài 1: Viết hàm tính tổng các số chẵn trong ma trận có kích thước m*n. Với m, n là các số nhập từ bàn phím.-->
+<!--</script>-->
+
+
+
+
+<script>
+    function mangHaiChieu(hang, cot) {
+        let arr = [];
+        for (let i = 0; i < hang; i++) {
+            arr.push([]);
+            arr[i].push(Array(cot));
+            for (let j = 0; j < cot; j++) {
+                arr[i][j] = parseInt(prompt("Nhập các phần tử của mảng 2 chiều: "));
+            }
+        }
+        return arr;
+    }
+    let m = parseInt(prompt("Nhập kích thước mảng con (số hàng của mảng 2 chiều): "));
+    let n = parseInt(prompt("Nhập sô phần tử mảng con (số cột của mảng 2 chiều): "));
+    let array = mangHaiChieu(m, n);
+    console.log(array);
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array[i].length; j++) {
+            if ((array[i][j]) % 2 == 0) {
+                sum += array[i][j];
+            }
+        }
+    }
+    document.write("Tống các số chẵn có trong ma trận khởi tạo là: "+sum)
+</script>
+</body>
+</html>
